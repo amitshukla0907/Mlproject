@@ -109,6 +109,7 @@ class ModelTrainer:
             # To get the best model name from the dictionary
             best_model_name = list(model_report.keys())[list(model_report.values()).index(best_model_score)]
             
+            print(f"Best model: {best_model_name}")
             best_model = models[best_model_name]
             
             if best_model_score < 0.6:
